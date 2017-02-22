@@ -1,0 +1,9 @@
+{
+    "facebook": {
+        "title": "Facebook",
+        
+        "mainView": {
+            "searchButtonLabel": "Search"
+        }
+    }
+}

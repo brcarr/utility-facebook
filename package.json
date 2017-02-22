@@ -1,0 +1,21 @@
+{
+    "name": "brcarr-utility-facebook",
+    "version": "0.0.1",
+    "main": "src/exports",
+    "dependencies": {
+        "core": "^1",
+        "controls": "^2",
+        "shell": "^2",
+        "psw-framework-application-context": "^1",
+        "psw-framework-notifications": "^1"
+    },
+    "config": {
+        "stylesheet": "src/content/styles.less"
+    },
+    "resources": "src/resources/locales",
+    "publishConfig": {
+        "availableModules": [
+            "FacebookModule"
+        ]
+    }
+}

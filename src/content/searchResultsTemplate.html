@@ -1,0 +1,35 @@
+<div class="results-pane">
+    {{#if isLoading}}
+        <div class="loading"></div>
+    {{else}}
+        {{#if fbUser.id}}
+            {{#if searchResults}}
+            <h3>Showing Results for <b>{{searchString}}</b></h3>
+            <ul class='results-list'>
+                {{#each searchResults}}
+                <li class="search-result card preview-left">
+                    <div class="layout-row">
+                        <div class="col-4 preview thumb">
+                            <a target="_blank" href="http://facebook.com/{{id}}">
+                            <img src="{{picture}}">
+                        </div>
+                        <div class="summary col-8">
+                                <div class="layout-row">
+                                    <h1>{{name}}</h1>
+                                </div>
+                            </a>
+                            <div class="col-8 facebook-id">
+                                {{id}}
+                            </div>
+                        </div>                    
+                    </div>
+                </li>
+                {{/each}}
+            </ul>
+            {{else}}
+                <div class="no-results">Sorry, we couldn't find any results for "{{searchString}}"</div>
+            {{/if}}
+
+        {{/if}}
+    {{/if}}
+</div>

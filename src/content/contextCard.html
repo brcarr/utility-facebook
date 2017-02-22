@@ -1,0 +1,18 @@
+<div class="context-card">
+    <span class="icon-facebook facebook-card" aria-hidden="true"></span><h4>Searching for {{searchString}}</h4>
+    {{#if searchResults}}
+        <div>We found {{searchResults.length}} results for "{{searchString}}"
+            <ul class="context-card-picture-list">
+                {{#each searchResults}}
+                <div class="context-card-picture">
+                    <li>
+                        <a target="_blank" href="http://facebook.com/{{id}}">
+                            <img src="{{picture}}" title="{{name}}">
+                        </a>
+                    </li>
+                </div>
+                {{/each}}
+            </ul>
+        </div>
+    {{/if}}
+</div>

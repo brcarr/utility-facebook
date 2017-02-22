@@ -1,0 +1,11 @@
+<div class="toolbar-control">
+{{#if fbUser.id}}
+    <div class="section-left"><span><img src="{{fbUser.picture}}" height="30px"> {{fbUser.name}}</span></div>
+    <div class="section-right"><span>If you are not {{fbUser.first_name}}, please logout.</span>
+        <button id="logout-button">Logout</button>
+    </div>
+{{else}}
+    <span>Oops, it looks like you aren't logged in to Facebook. Would you like to login?</span>
+    <button id="login-button">Login</button>
+{{/if}}
+</div>
